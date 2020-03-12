@@ -20,7 +20,7 @@ def login(baseurl,email,password,s):
     s.post(baseurl,data=login_data)
 session = requests.session()
 url = "http://202.207.12.223:8000/accounts/signin/"
-login(url,"0161122723","mzw123456",session)
+login(url,"0161122723","test",session)
 
 dll=cdll.LoadLibrary('E:\VS保存文件\mydll\Debug\mydll.dll')
 out=dll.Output
